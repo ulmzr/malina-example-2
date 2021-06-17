@@ -1,0 +1,21 @@
+<script>
+   export let params;
+   let id = params.postid - 1
+
+   let article;
+
+   function onMount(){
+      fetch(`http://localhost:3000/post/${id}`)
+      .then(response => response.json())
+      .then(data => article = data);
+   }
+</script>
+
+{#if article}
+<h2>{article.title}</h2>
+<h4>{article.subtitle}</h4>
+<hr/>
+{@html article.content}
+{:else}
+<p>Loading...</p>
+{/if}

@@ -2,16 +2,14 @@
    import Navaid from 'navaid';
 
    import Nav from './components/Nav.xht';
-   //import Home from './pages/Home.xht';
 
    let Route, params={}, active, uri;
    
    const router = Navaid('/')
-		.on('/', () => run(import('./pages/Home.xht')))
-      //.on('/', () => Route = Home)
-		.on('/about', () => run(import('./pages/About.xht')))
-		.on('/blog', () => run(import('./pages/Blog.xht')))
-		.on('/blog/:postid', obj => run(import('./pages/Articles.xht'), obj))
+		.on('/', () => run(import('./pages/home.xht')))
+		.on('/about', () => run(import('./pages/about.xht')))
+		.on('/blog', () => run(import('./pages/blog.xht')))
+		.on('/blog/:postid', obj => run(import('./pages/articles.xht'), obj))
 		.listen();
 
    function run(thunk, obj) {

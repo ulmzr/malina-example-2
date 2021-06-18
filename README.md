@@ -1,6 +1,11 @@
-# Malina Fullstack
+## Malina.js Example
 
-Malina, Navaid and Derver.
-...on progress. 
+<img align="right" width="200" height="200" src="dist/static/malinajs.svg" />
 
+Malina.js builds your web-application to use it **without framework on frontend side**. 
+Therefore your web-app becomes thinner and faster, and the application itself consist of **vanilla JavaScript**.
 
+In this example;
+- Routing using Navaid
+- Splitting code
+- Backend using Derver

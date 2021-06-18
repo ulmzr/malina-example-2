@@ -6,7 +6,7 @@ Malina.js builds your web-application to use it **without framework on frontend 
 Therefore your web-app becomes thinner and faster, and the application itself consist of **vanilla JavaScript**.
 
 In this example;
-- Routing using Navaid
-- Splitting code
-- Backend using Derver
+- Routing using Navaid.
+- Splitting code.
+- Backend using Derver.
 

@@ -62,7 +62,7 @@ async function build_server() {
       bundle: true,
       outfile: 'dist/app.js',
       platform: 'node',
-      sourcemap: DEV, // Use `DEV && 'inline'` to inline sourcemaps to the bundle
+      sourcemap: DEV,
       minify: !DEV,
       incremental: DEV,
       plugins: [
@@ -75,8 +75,11 @@ async function build_client() {
    return await build( {
       entryPoints: [ 'src/client/main.js' ],
       bundle: true,
-      outfile: 'dist/static/build/bundle.js',
-      sourcemap: DEV, // Use `DEV && 'inline'` to inline sourcemaps to the bundle
+      outdir: 'dist/static/build',
+      format: 'esm',
+      chunkNames: !DEV ? '[name].[hash]' : '[name]',
+      splitting: true,
+      sourcemap: DEV,
       minify: !DEV,
       incremental: DEV,
       plugins: [

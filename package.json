@@ -15,7 +15,7 @@
    "devDependencies": {
       "derver": "^0.4.16",
       "esbuild": "^0.12.9",
-      "malinajs": "^0.6.27",
+      "malinajs": "^0.6.28",
       "navaid": "^1.2.0",
       "node-watch": "^0.7.1",
       "rimraf": "^3.0.2"

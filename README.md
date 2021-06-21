@@ -12,4 +12,5 @@ In this example;
 - Routing using [Navaid](https://github.com/lukeed/navaid).
 - Splitting code.
 - Backend using [Derver](https://github.com/AlexxNB/derver).
+- MySQL using [mysql2](https://github.com/sidorares/node-mysql2)
 

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/client/pages/about.xht"],
+  "sourcesContent": ["import * as $runtime from 'malinajs/runtime.js';\nimport { $watch, $watchReadOnly, $tick } from 'malinajs/runtime.js';\nimport { $$htmlToFragment } from 'malinajs/runtime.js';\nexport default ($element, $option={}) => {\n  {\n    const $parentElement = $$htmlToFragment(` <h2>About this site</h2> <p>This is the 'about' page. There's not much here.</p> `);\n    document.title = `About`;\n    $runtime.$insertElementByOption($element, $option, $parentElement);\n  }\n}"],
+  "mappings": ";;;;;;AAGA,IAAO,gBAAQ,CAAC,UAAU,UAAQ,OAAO;AACvC;AACE,UAAM,iBAAiB,iBAAiB;AACxC,aAAS,QAAQ;AACjB,IAAS,uBAAuB,UAAU,SAAS;AAAA;AAAA;",
+  "names": []
+}

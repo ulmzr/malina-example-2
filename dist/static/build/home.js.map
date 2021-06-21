@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../src/client/pages/home.xht"],
+  "sourcesContent": ["import * as $runtime from 'malinajs/runtime.js';\nimport { $watch, $watchReadOnly, $tick } from 'malinajs/runtime.js';\nimport { $$htmlToFragment } from 'malinajs/runtime.js';\nexport default ($element, $option={}) => {\n  {\n    const $parentElement = $$htmlToFragment(` <h1 class=\"mcsiy2t\">HOMEPAGE</h1> <figure class=\"mcsiy2t\"> <img alt=\"Malina\" src=\"/malinajs.svg\" class=\"mcsiy2t\"/> <figcaption class=\"mcsiy2t\">Malina Web UI-Framework</figcaption> </figure> <p class=\"mcsiy2t\"><strong>Try editing this file (pages/home.xht) to test hot module reloading.</strong></p> `);\n    document.title = `Home`;\n    $runtime.$insertElementByOption($element, $option, $parentElement);\n  }\n}\nimport \"C:/LABS/Zero/0/malina-example-3/src/client/pages/home.malina.css\";"],
+  "mappings": ";;;;;;AAGA,IAAO,eAAQ,CAAC,UAAU,UAAQ,OAAO;AACvC;AACE,UAAM,iBAAiB,iBAAiB;AACxC,aAAS,QAAQ;AACjB,IAAS,uBAAuB,UAAU,SAAS;AAAA;AAAA;",
+  "names": []
+}

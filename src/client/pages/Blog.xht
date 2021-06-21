@@ -2,10 +2,15 @@
 
    let articles;
 
-   function onMount(){
-      fetch('http://localhost:3000/posts')
+   async function onMount(){
+      /*
+      fetch('http://localhost:3000/api/blogs')
       .then(response => response.json())
-      .then(data => articles = data);
+      .then(res => articles = res.data);
+      */
+      const response = await fetch('http://localhost:3000/api/blogs');
+      const res = await response.json();
+      articles = res.data
    }
 
 </script>

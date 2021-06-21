@@ -1,13 +1,13 @@
 <script>
    export let params;
-   let id = params.postid - 1
+   let id = params.postid
 
    let article;
 
-   function onMount(){
-      fetch(`http://localhost:3000/post/${id}`)
-      .then(response => response.json())
-      .then(data => article = data);
+   async function onMount(){
+      const response = await fetch(`http://localhost:3000/api/blogs/${id}`);
+      const res = await response.json();
+      article = res.data
    }
 </script>
 

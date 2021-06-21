@@ -1,33 +1,33 @@
-/* malinacss:C:/LABS/Zero/0/malina-example-3/src/client/pages/home.malina.css */
-h1.mcsiy2t,
-figure.mcsiy2t,
-p.mcsiy2t {
+/* malinacss:C:/LABS/Zero/0/malina-example-2/src/client/pages/home.malina.css */
+h1.m6zcctc,
+figure.m6zcctc,
+p.m6zcctc {
   text-align: center;
   margin: 0 auto;
 }
-h1.mcsiy2t {
+h1.m6zcctc {
   font-size: 2.8em;
   text-transform: uppercase;
   font-weight: 700;
   margin: 0 0 0.5em 0;
 }
-figure.mcsiy2t {
+figure.m6zcctc {
   display: table;
 }
-figcaption.mcsiy2t {
+figcaption.m6zcctc {
   display: table-caption;
   caption-side: bottom;
 }
-img.mcsiy2t {
+img.m6zcctc {
   width: 100%;
   max-width: 400px;
   margin: 0 0 1em 0;
 }
-p.mcsiy2t {
+p.m6zcctc {
   margin: 1em auto;
 }
 @media (min-width:480px) {
-  h1.mcsiy2t {
+  h1.m6zcctc {
     font-size: 4em;
   }
 }

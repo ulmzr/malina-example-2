@@ -19,10 +19,5 @@
       "navaid": "^1.2.0",
       "node-watch": "^0.7.1",
       "rimraf": "^3.0.2"
-   },
-   "dependencies": {
-      "@hapi/boom": "^9.1.2",
-      "dotenv": "^10.0.0",
-      "mysql2": "^2.2.5"
    }
 }

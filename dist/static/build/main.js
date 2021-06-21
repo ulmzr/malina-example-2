@@ -136,7 +136,7 @@ function wrap(type, fn) {
 var Nav_default = makeComponent(($option, $$apply) => {
   const $component = current_component;
   const $props = $option.props || {};
-  const $$resolveClass = makeClassResolver($option, { "selected": "m57npbs" }, {}, null);
+  const $$resolveClass = makeClassResolver($option, { "selected": "mju0rbo" }, {}, null);
   let { active } = $props;
   current_component.push = () => {
     ({ active = active } = $props);
@@ -149,13 +149,13 @@ var Nav_default = makeComponent(($option, $$apply) => {
   }
   {
     let $cd = $component.$cd;
-    const $parentElement = $$htmlToFragment(` <nav class="mr1kpfl"> <ul class="mr1kpfl"><li class="mr1kpfl"><a href="/">home</a></li><li class="mr1kpfl"><a href="/about">about</a></li><li class="mr1kpfl"><a href="/blog">blog</a></li></ul> </nav> `);
+    const $parentElement = $$htmlToFragment(` <nav class="mpnx5fx"> <ul class="mpnx5fx"><li class="mpnx5fx"><a href="/">home</a></li><li class="mpnx5fx"><a href="/about">about</a></li><li class="mpnx5fx"><a href="/blog">blog</a></li></ul> </nav> `);
     let el0 = $parentElement[childNodes][1][childNodes][1][firstChild][firstChild];
     let el1 = $parentElement[childNodes][1][childNodes][1][childNodes][1][firstChild];
     let el2 = $parentElement[childNodes][1][childNodes][1][childNodes][2][firstChild];
-    $watchReadOnly($cd, () => $$resolveClass(isActive("home"), "mr1kpfl"), (value) => setClassToElement(el0, value));
-    $watchReadOnly($cd, () => $$resolveClass(isActive("about"), "mr1kpfl"), (value) => setClassToElement(el1, value));
-    $watchReadOnly($cd, () => $$resolveClass(isActive("blog"), "mr1kpfl"), (value) => setClassToElement(el2, value));
+    $watchReadOnly($cd, () => $$resolveClass(isActive("home"), "mpnx5fx"), (value) => setClassToElement(el0, value));
+    $watchReadOnly($cd, () => $$resolveClass(isActive("about"), "mpnx5fx"), (value) => setClassToElement(el1, value));
+    $watchReadOnly($cd, () => $$resolveClass(isActive("blog"), "mpnx5fx"), (value) => setClassToElement(el2, value));
     return $parentElement;
   }
 }, $base);
@@ -211,7 +211,7 @@ var App_default = makeComponent(($option, $$apply) => {
   ;
   {
     let $cd = $component.$cd;
-    const $parentElement = $$htmlToFragment(` <> <main class="mzr8q5l"> <> </main> `);
+    const $parentElement = $$htmlToFragment(` <> <main class="mefqip6"> <> </main> `);
     let el0 = $parentElement[childNodes][1];
     let el2 = $parentElement[childNodes][3][childNodes][1];
     {

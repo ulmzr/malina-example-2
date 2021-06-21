@@ -18,13 +18,15 @@ import {
 var blog_default = makeComponent(($option, $$apply) => {
   const $component = current_component;
   let articles;
-  async function onMount() {
+  function onMount() {
     $$apply();
-    const response = await fetch("http://localhost:3000/api/blogs");
-    $$apply();
-    const res = await response.json();
-    $$apply();
-    articles = res.data;
+    fetch("http://localhost:3000/posts").then((response) => {
+      $$apply();
+      return response.json();
+    }).then((data) => {
+      $$apply();
+      return articles = data;
+    });
   }
   {
     let $cd = $component.$cd;

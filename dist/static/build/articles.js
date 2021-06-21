@@ -22,15 +22,17 @@ var articles_default = makeComponent(($option, $$apply) => {
     $$apply();
   };
   current_component.exportedProps = { params: () => params };
-  let id = params.postid;
+  let id = params.postid - 1;
   let article;
-  async function onMount() {
+  function onMount() {
     $$apply();
-    const response = await fetch(`http://localhost:3000/api/blogs/${id}`);
-    $$apply();
-    const res = await response.json();
-    $$apply();
-    article = res.data;
+    fetch(`http://localhost:3000/post/${id}`).then((response) => {
+      $$apply();
+      return response.json();
+    }).then((data) => {
+      $$apply();
+      return article = data;
+    });
   }
   {
     let $cd = $component.$cd;

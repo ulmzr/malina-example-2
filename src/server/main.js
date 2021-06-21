@@ -1,14 +1,8 @@
 import server from '@server';
-import routes from './routes';
-
 const app = server( {
    port: 3000,
    spa: true
 } );
-
-app.sub( '/api', routes )
-
-/*
 
 let articles = [ {
       id: 1,
@@ -47,5 +41,3 @@ app.use( '/post/:id', async ( req, resp, next ) => {
    let postId = req.params.id
    resp.send( JSON.stringify( articles[ postId ] ) );
 } )
-
-*/
